@@ -1,0 +1,5 @@
+numpy>=1.14.2
+networkx>=2.1
+cobra>=0.11.3
+click>=6.7
+python-libsbml>=5.16.0
