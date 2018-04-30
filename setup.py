@@ -22,14 +22,14 @@ setup(
     setup_requires=[],
     install_requires=requirements,
     tests_require=['pytest'],
-    author='Aarthi Ravikrishnan', 'Meghana Nasre', 'Karthik Raman',
+    author='Aarthi Ravikrishnan',
     author_email='aarthiravikrishnan@gmail.com',
     description='MetQuest: Enumerating all possible biosynthetic pathways in metabolic networks ',
     long_description=description,
     license="LGPL/GPL v2+",
     keywords='metabolism biology graph-theory pathways',
-    url='https://github.com/RamanLab/MetQuest',
-    download_url='https://testpypi.python.org/pypi/metquest',
+    url='https://github.com/aarthi31/metquest-test',
+    download_url='https://github.com/aarthi31/metquest-test',
     classifiers=[
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU Lesser General Public License v2'
