@@ -46,7 +46,7 @@ should contain ecoli_core_model fum_c
 
 #### From command line
 ``` 
-python3 execute_metquest.py >*path containing the input folder*
+python3 execute_metquest.py <i>path containing the input folder</i>
 ```
 
 #### From python console
