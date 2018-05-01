@@ -2,7 +2,7 @@
 
 MetQuest is a dynamic programming based algorithm for identifying all possible
 pathways from metabolic networks between the source and the target metabolites. 
-MetQuest requires the genome-scale metabolic reconstructions (in xml format),
+MetQuest requires the genome-scale metabolic reconstructions,
 set of seed, source and target metabolites and the pathway length cut-off. 
 MetQuest is compatible with Python 3 and is OS-independent.  
 
@@ -46,7 +46,7 @@ should contain ecoli_core_model fum_c
 
 ###### From command line
 ``` 
-python3 execute_metquest.py __path containing the input folder__
+python3 execute_metquest.py >*path containing the input folder*
 ```
 
 ###### From python console
