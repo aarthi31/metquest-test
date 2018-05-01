@@ -1,29 +1,46 @@
 # MetQuest
 
-MetQuest is a dynamic programming based algorithm for identifying all possible pathways from metabolic networks between the source and the target metabolites.
+MetQuest is a dynamic programming based algorithm for identifying all possible
+pathways from metabolic networks between the source and the target metabolites. 
+MetQuest requires the genome-scale metabolic reconstructions (in xml format),
+set of seed, source and target metabolites and the pathway length cut-off. 
+MetQuest is compatible with Python 3 and is OS-independent.  
+
+## Installation
+
+Use pip to install metquest from
+```PyPI <https://pypi.python.org/pypi/mackinac>```
+(http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_)::
+
+```pip3 install metquest```
 
 ## Getting started
 
-1. Clone this repository to your computer using ```git``` or [download the repository](https://github.com/aarthi31/MetQuest/) and decompress it. All the executable codes can be found in the folder Codes.  
-2. Install [Python 2.7.14](https://www.python.org/downloads/)
-
-Ensure that the following packages (with the specified version) are installed:
-[NetworkX 1.9.1](http://networkx.github.io/), [cobrapy 0.5.4](https://github.com/opencobra/cobrapy) and
-[libSBML 5.13.0](http://sbml.org/Software/libSBML/docs/python-api/libsbml-downloading.html)
+1. Install [Python 3.6](https://www.python.org/downloads/)
+2. Clone this repository to your computer using ```git``` or [download the repository](https://github.com/RamanLab/MetQuest) and decompress it.   
+3. Navigate to the folder where metquest is downloaded and type
+```
+python setup.py install
+```
 
 
 ## Input
 
 Folder whose structure is as shown:
 ```
-   
-    ├── Example                 # Folder  
-    │   ├── SBML model(s) of metabolic networks          # XML files of the metabolic networks (COBRA-compatible)
+   ├── mainfolder                # Folder  
+    ├── Example1                 # Folder  
+    │   ├── SBML model(s) of metabolic networks # XML files of the metabolic networks(COBRA-compatible)
     │   ├── seed_mets.txt         # Text file containing the seed metabolites separated by a newline
     │   ├── source_mets.txt       # Text file containing the source metabolites separated by a newline
     │   └── target_mets.txt       # Text file containing the target metabolites separated by a newline
     └── ...
  ```
+
+Kindly ensure that the SBML model has the field <model id> and the metabolites
+are prefixed with the model identifiers, for instance, if the model identifier is 
+'ecoli_core_model', and the seed metabolite is 'fum_c', the input text file
+should contain ecoli_core_model fum_c
 
 ## Running MetQuest
 
