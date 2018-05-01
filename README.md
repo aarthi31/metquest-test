@@ -8,9 +8,8 @@ MetQuest is compatible with Python 3 and is OS-independent.
 
 ## Installation
 
-Use pip to install metquest from
-```PyPI <https://pypi.python.org/pypi/mackinac>```
-(http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_)::
+Use pip3 to install metquest from 
+```PyPI <https://pypi.python.org/pypi/metquest>```
 
 ```pip3 install metquest```
 
@@ -47,7 +46,7 @@ should contain ecoli_core_model fum_c
 
 ###### From command line
 ``` 
-python3 execute_metquest.py *path containing the input folder*
+python3 execute_metquest.py _path containing the input folder_
 ```
 
 ###### From python console
