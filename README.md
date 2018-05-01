@@ -14,7 +14,7 @@ Use pip to install metquest from
 
 ```pip3 install metquest```
 
-## Getting started
+## Direct installation
 
 1. Install [Python 3.6](https://www.python.org/downloads/)
 2. Clone this repository to your computer using ```git``` or [download the repository](https://github.com/RamanLab/MetQuest) and decompress it.   
@@ -28,12 +28,13 @@ python setup.py install
 
 Folder whose structure is as shown:
 ```
-   ├── mainfolder                # Folder  
-    ├── Example1                 # Folder  
+   ├── mainfolder               # Folder  
+    ├── Example1                # Folder  
     │   ├── SBML model(s) of metabolic networks # XML files of the metabolic networks(COBRA-compatible)
-    │   ├── seed_mets.txt         # Text file containing the seed metabolites separated by a newline
-    │   ├── source_mets.txt       # Text file containing the source metabolites separated by a newline
-    │   └── target_mets.txt       # Text file containing the target metabolites separated by a newline
+    │   ├── seed_mets.txt       # Text file containing the seed metabolites separated by a newline
+    │   ├── source_mets.txt     # Text file containing the source metabolites separated by a newline
+    │   ├──target_mets.txt      # Text file containing the target metabolites separated by a newline
+    │   ├──cutoff.txt       	# Text file containing the size cut-offs separated by a newline
     └── ...
  ```
 
@@ -43,6 +44,17 @@ are prefixed with the model identifiers, for instance, if the model identifier i
 should contain ecoli_core_model fum_c
 
 ## Running MetQuest
+
+###### From command line
+``` 
+python3 execute_metquest.py *path containing the input folder*
+```
+
+###### From python console
+```
+>>> import metquest
+>>> metquest.execute_metquest.execute_all_codes()
+```
 
 
 ## Authors
