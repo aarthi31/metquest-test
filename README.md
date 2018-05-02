@@ -27,13 +27,13 @@ python setup.py install
 
 Folder whose structure is as shown:
 ```
-   ├── mainfolder               # Folder  
-    ├── Example1                # Folder  
-    │   ├── SBML model(s) of metabolic networks # XML files of the metabolic networks(COBRA-compatible)
-    │   ├── seed_mets.txt       # Text file containing the seed metabolites separated by a newline
-    │   ├── source_mets.txt     # Text file containing the source metabolites separated by a newline
-    │   ├──target_mets.txt      # Text file containing the target metabolites separated by a newline
-    │   ├──cutoff.txt       	# Text file containing the size cut-offs separated by a newline
+   ├── mainfolder              # Folder  
+    ├── Example1               # Folder  
+    │   ├──SBML model(s) of metabolic networks # XML files of the metabolic networks(COBRA-compatible)
+    │   ├──seed_mets.txt       # Text file containing the seed metabolites separated by a newline
+    │   ├──source_mets.txt     # Text file containing the source metabolites separated by a newline
+    │   ├──target_mets.txt     # Text file containing the target metabolites separated by a newline
+    │   ├──cutoff.txt          # Text file containing the size cut-offs separated by a newline
     └── ...
  ```
 
@@ -45,6 +45,7 @@ should contain ecoli_core_model fum_c
 ## Running MetQuest
 
 #### From command line
+Navigae to the folder where metquest is installed and type
 ``` 
 python3 execute_metquest.py <path containing the input folder>
 
@@ -55,10 +56,20 @@ python3 execute_metquest.py <path containing the input folder>
 #### From python console
 ```
 >>> import metquest
->>> metquest.execute_metquest.execute_all_codes()
+>>> metquest.execute_all_codes()
 ```
-When prompted, enter the path containing the folder
+When prompted, enter the path containing the folder with all the data files
 
+#### Running examples
+
+In the python console, type the following
+
+```
+>>> import metquest
+>>> metquest.example.run_this_example()
+```
+
+This will run the example files.
 ## Authors
 
 * [Aarthi Ravikrishnan](https://github.com/aarthi31)
